@@ -751,22 +751,6 @@ p-dropdown.ng-invalid {
   background-size: 100% 100%;
   height: 16px;
   width: 16px;
-
-  &.edit-icon {
-    background-image: url('~src/assets/images/common/edit-icon.png');
-  }
-
-  &.edit-icon-disabled {
-    background-image: url('~src/assets/images/common/edit-icon-disabled.png');
-  }
-
-  &.delete-icon {
-    background-image: url('~src/assets/images/common/delete-icon.png');
-  }
-
-  &.delete-icon-disabled {
-    background-image: url('~src/assets/images/common/delete-icon-disabled.png');
-  }
 }
 
 .ant-upload-list-item-info {
