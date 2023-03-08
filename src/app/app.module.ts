@@ -24,9 +24,6 @@ import { CheckboxModule } from 'primeng/checkbox';
 import { ButtonModule } from 'primeng/button';
 
 // modules
-import { LoginComponent } from './pages/login/login.component';
-import { CoreModule } from '../core/core.module';
-import { CommonPageModule } from './pages/common/common.module';
 import { ApiModule } from '../api/api.module';
 
 // common
@@ -63,7 +60,7 @@ export function initialize(appInitService: AppInitService) {
 }
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -71,8 +68,6 @@ export function initialize(appInitService: AppInitService) {
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    CoreModule,
-    CommonPageModule,
     ApiModule,
     LayoutModule,
 

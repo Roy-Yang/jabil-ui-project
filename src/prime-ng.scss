@@ -129,7 +129,8 @@ $success: #3bb56e !default;
     opacity: 1;
   }
 
-  p-inputswitch, p-radiobutton {
+  p-inputswitch,
+  p-radiobutton {
     .p-disabled {
       background: unset !important;
     }

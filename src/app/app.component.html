@@ -1,5 +1,4 @@
-<app-login *ngIf="!isLogin && !isRedirect" style="width: 100%"></app-login>
-<app-layout *ngIf="isLogin && !isRedirect && showLayout" style="width: 100%; height: 100vh" [menuTreeKeys]="menuTreeKeys" [menuTree]="menuTree"></app-layout>
-<app-redirect *ngIf="isRedirect"></app-redirect>
-<!--<app-redirect></app-redirect>-->
-<p-toast position="top-center"></p-toast>
+<app-layout
+  style="width: 100%; height: 100vh"
+  [menuTreeKeys]="menuTreeKeys"
+  [menuTree]="menuTree"></app-layout>
