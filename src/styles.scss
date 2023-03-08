@@ -15,7 +15,7 @@ $danger: #c84837 !default;
     app-login {
       min-width: 125% !important;
       height: 125% !important;
-      transform: scale(0.8, 0.8); /* 缩放数值需要根据效果调试 */
+      transform: scale(0.8, 0.8);
       transform-origin: left top;
     }
 
@@ -34,67 +34,13 @@ $danger: #c84837 !default;
         height: 100% !important;
 
         .container {
-          transform: scale(0.8, 0.8); /* 缩放数值需要根据效果调试 */
+          transform: scale(0.8, 0.8);
           transform-origin: 50% 50%;
         }
       }
     }
   }
 }
-
-//@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 120dpi) {
-//  app-root {
-//    app-layout, app-login {
-//      min-width: 150% !important;
-//      height: 150% !important;
-//      transform: scale(0.665, 0.665); /* 缩放数值需要根据效果调试 */
-//      transform-origin: left top;
-//    }
-//
-//    app-login {
-//      .backgimage {
-//        width: 100%!important;
-//        height: 100%!important;
-//
-//        img {
-//          height: 100% !important;
-//        }
-//      }
-//
-//      .main {
-//        width: 100% !important;
-//        height: 100% !important;
-//      }
-//    }
-//  }
-//}
-/* 屏幕分辨率放大为 125 */
-//@media (-webkit-min-device-pixel-ratio: 1.25) {
-//  app-root, app-login {
-//    app-layout {
-//      width: 125%!important;
-//      height: 125% !important;
-//      transform: scale(0.799, 0.799);
-//      transform-origin: left top;
-//    }
-//  }
-//
-//  app-login {
-//    .backgimage {
-//      width: 120%!important;
-//      height: 100%!important;
-//
-//      img {
-//        height: 100% !important;
-//      }
-//    }
-//
-//    .main {
-//      width: 120% !important;
-//      height: 100% !important;
-//    }
-//  }
-//}
 
 .mainscontent {
   display: flex;
@@ -156,7 +102,7 @@ $danger: #c84837 !default;
 }
 
 .pd-15 {
-  padding: 1.5rem 1.5rem 0rem 1.5rem !important;
+  padding: 1.5rem 1.5rem 0 1.5rem !important;
 }
 
 .action-bar {
@@ -452,14 +398,13 @@ body .p-datatable .p-datatable-tbody > tr.p-highlight {
 }
 
 .p-panelmenu
-  .p-panelmenu-content
-  .p-menuitem
-  .p-menuitem-link:not(.p-disabled):hover
-  .p-menuitem-text {
+.p-panelmenu-content
+.p-menuitem
+.p-menuitem-link:not(.p-disabled):hover
+.p-menuitem-text {
   color: #eee;
 }
 //   Menu bar end
-
 .div_input {
   display: flex;
   align-items: center;
@@ -509,13 +454,11 @@ body .p-datatable .p-datatable-tbody > tr.p-highlight {
 }
 
 //Tooltip
-
 .p-tooltip {
   width: 400px !important;
 }
 
 //   pdf viewer
-
 .p-button .pi {
   padding-right: 5px !important;
 }
@@ -577,7 +520,7 @@ body .p-datatable .p-datatable-tbody > tr.p-highlight {
 }
 
 .noClick {
-  pointer-events: none; /* 禁止鼠标点击 */
+  pointer-events: none;
 }
 
 .dialog-input {
@@ -606,7 +549,6 @@ body .p-datatable .p-datatable-tbody > tr.p-highlight {
   .input-text {
     height: 30px;
     vertical-align: middle;
-    //border: 1px solid #ced4da;
   }
 }
 
@@ -644,7 +586,7 @@ p-dropdown.ng-invalid {
   }
 }
 
-/*滚动条样式*/
+/*scroll style*/
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -730,7 +672,7 @@ p-dropdown.ng-invalid {
   overflow: hidden !important;
   text-overflow: ellipsis !important;
   display: -webkit-box !important;
-  -webkit-line-clamp: 2 !important; // 2行省略
+  -webkit-line-clamp: 2 !important;
   overflow: hidden !important;
   -webkit-box-orient: vertical !important;
 }
@@ -759,10 +701,10 @@ p-dropdown.ng-invalid {
   }
 }
 
-@import '~ng-zorro-antd/src/style/index.min.css'; /* 引入组件样式 */
-@import '~ng-zorro-antd/tree/style/index.min.css'; /* 引入组件样式 */
-@import '~ng-zorro-antd/select/style/index.min.css'; /* 引入组件样式 */
-@import '~ng-zorro-antd/upload/style/index.min.css'; /* 引入组件样式 */
-@import '~ng-zorro-antd/icon/style/index.min.css'; /* 引入组件样式 */
-@import '~ng-zorro-antd/image/style/index.min.css'; /* 引入组件样式 */
-@import '~ng-zorro-antd/cascader/style/index.min.css'; /* 引入组件样式 */
+@import '~ng-zorro-antd/src/style/index.min.css';
+@import '~ng-zorro-antd/tree/style/index.min.css';
+@import '~ng-zorro-antd/select/style/index.min.css';
+@import '~ng-zorro-antd/upload/style/index.min.css';
+@import '~ng-zorro-antd/icon/style/index.min.css';
+@import '~ng-zorro-antd/image/style/index.min.css';
+@import '~ng-zorro-antd/cascader/style/index.min.css';
