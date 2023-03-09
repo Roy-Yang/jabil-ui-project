@@ -39,7 +39,9 @@
               "node_modules/primeicons/primeicons.css",
               "node_modules/primeflex/primeflex.css",
               "node_modules/quill/dist/quill.core.css",
-              "node_modules/quill/dist/quill.snow.css"
+              "node_modules/quill/dist/quill.snow.css",
+              "node_modules/jabil-bus-lib/src/style/prime-ng.scss",
+              "node_modules/jabil-bus-lib/src/style/jabil-bus.scss"
             ],
             "scripts": [
               "node_modules/chart.js/dist/chart.js",

@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: 'demo',
-    loadChildren: () => import('./pages/demo/demo-routing.module').then(m => m.DemoRoutingModule),
+    loadChildren: () => import('./pages/demo/demo.module').then(m => m.DemoModule),
   },
 ];
 
